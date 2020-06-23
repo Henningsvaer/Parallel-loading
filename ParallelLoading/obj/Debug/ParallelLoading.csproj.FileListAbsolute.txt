@@ -1,0 +1,6 @@
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.exe.config
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.exe
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.pdb
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.csprojAssemblyReference.cache
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.exe
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.pdb
