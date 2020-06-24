@@ -10,19 +10,19 @@ namespace ParallelLoading
     {
         static void Main(string[] args)
         {
-            ConsoleKeyInfo cki; 
-            Start();
-            // Переделать в отдельном потоке.
+            
+        }
+
+        // TO DO: Запустить в отдельном потоке.
+        // Выход из приложения.
+        static void AppQuit()
+        {
+            ConsoleKeyInfo cki;
             do
             {
                 cki = Console.ReadKey();
 
             } while (cki.Key != ConsoleKey.Escape);
-        }
-
-        static void Start()
-        {
-
         }
     }
 }
