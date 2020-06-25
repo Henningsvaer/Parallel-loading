@@ -1,0 +1,8 @@
+В базу записан 10 fname10 lname10 kazan sobaka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 8 fname8 lname8 kazan soba233ka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 5 fname5 lname5 kazan sob1aka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 1 fname1 lname1 kazan sobaka1@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 6 fname6 lname6 kazan sob5aka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 7 fname7 lname7 kazan soba12ka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 12 fname6 lname6 kazan sob5aka@mail.ru 88005553535 25.06.2020 16:43:58
+В базу записан 14 fname8 lname8 kazan soba233ka@mail.ru 88005553535 25.06.2020 16:43:58

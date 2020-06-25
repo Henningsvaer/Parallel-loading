@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,8 +53,6 @@
     <Compile Include="Report\ConsoleReport.cs" />
     <Compile Include="Report\IReport.cs" />
     <Compile Include="Report\LogFileReport.cs" />
-    <Compile Include="XML\UserConfig.cs" />
-    <Compile Include="XML\XMLReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataManagement\InputData\input.txt">

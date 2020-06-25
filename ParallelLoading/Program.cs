@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using WriteReadClassLib;
 using WriteReadClassLib.DataManagement;
@@ -12,6 +8,7 @@ namespace ParallelLoading
 {
     internal sealed class Program
     {
+        static List<Person> people;
         static void Main(string[] args)
         {
             // Считаем количество потоков из CustomConfig.
@@ -19,14 +16,17 @@ namespace ParallelLoading
                Environment.CurrentDirectory.ToString() + @"\AppConfigure\customConfig.txt");
 
             // Параллельно считываем input файл.
-            List<Person> people = DataManager.ReadInputFileAsParallel();           
+            people = DataManager.ReadInputFileAsParallel();           
             
             // Запускаем потоки для обработки списка записей и записи в бд.
             List<Task> tasks = new List<Task>();
 
-            // Разделяем "людей" по потокам.
+            // Разделяем записи по потокам.
             int integerPart = people.Count / threadCount;
             int remainderPart = people.Count % threadCount;
+
+
+            Console.WriteLine($"People count {people.Count}");
 
             for (int i = 0; i < threadCount ; i++)
             {
@@ -36,15 +36,26 @@ namespace ParallelLoading
                     To = integerPart * i + integerPart - 1
                 };
 
+                Console.WriteLine($"from {arg.From} to {arg.To}");
                 // Все оставшиеся строки отдаем в последний поток.
                 if (i == threadCount - 1)
                 {
                     arg.To = integerPart * i + integerPart - 1 + remainderPart;
                 }
 
+                // Записываем данные в таблицу бд.
                 var task = new TaskFactory().StartNew(new Action(() =>
                 {
-                    ReadJsonAndWriteDb(arg.From, arg.To);
+                    Parallel.For(arg.From, arg.To + 1, count => 
+                    {
+                        var db = new DbWriter();
+                        string log = string.Empty;
+                        db.WriteToDbRow(people[count], ref log);
+
+                        // Логирование.
+                        DataManager.Log(DataManager.Logger.Console, log);
+                        DataManager.Log(DataManager.Logger.File, log);
+                    });
                 }));
             }
 
@@ -56,13 +67,8 @@ namespace ParallelLoading
 
             } while (cki.Key != ConsoleKey.Escape);
 
-            // Закрытие всех потоков, работавших в фоновом режиме.
+            // Закрытие всех потоков.
             Environment.Exit(Environment.ExitCode);
-        }
-
-        static void ReadJsonAndWriteDb(int from, int to)
-        {
-            Console.WriteLine($"from {from} to {to}");
         }
 
         public sealed class TaskArgs

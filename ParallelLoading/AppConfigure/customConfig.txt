@@ -1,1 +1,1 @@
-﻿FileProcessingThreadsCount:3
+﻿FileProcessingThreadsCount:4
