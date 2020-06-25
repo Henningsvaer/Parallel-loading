@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace WriteReadClassLib
 {
-    public static class XMLReader
+    internal static class XMLReader
     {
         public static UserConfig Read(string path)
         {

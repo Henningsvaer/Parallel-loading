@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\ParallelLoading\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -43,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManagement\DataManager.cs" />
+    <Compile Include="DataManagement\DbWriter.cs" />
+    <Compile Include="DataManagement\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\ConsoleReport.cs" />
     <Compile Include="Report\IReport.cs" />
@@ -51,12 +56,15 @@
     <Compile Include="XML\XMLReader.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataManagement\InputData\input.txt" />
+    <None Include="DataManagement\InputData\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataManagement\OutputData\outputLog.txt">
+    <None Include="DataManagement\OutputData\outputLog.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />

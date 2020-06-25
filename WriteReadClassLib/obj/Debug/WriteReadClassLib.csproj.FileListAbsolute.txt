@@ -4,3 +4,7 @@ C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\Write
 C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\WriteReadClassLib.pdb
 C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.dll
 C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.pdb
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\DataManagement\InputData\input.txt
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.csproj.CopyComplete

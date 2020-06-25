@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using WriteReadClassLib;
+using WriteReadClassLib.DataManagement;
 
 namespace ParallelLoading
 {
@@ -14,11 +15,38 @@ namespace ParallelLoading
         static void Main(string[] args)
         {
             // Считаем количество потоков из CustomConfig.
-            int threadCount = GetThreadCountFromConfig(
+            int threadCount = DataManager.GetThreadCountFromConfig(
                Environment.CurrentDirectory.ToString() + @"\AppConfigure\customConfig.txt");
 
-            // TO DO : запусти все потоки в background = true;
-           DataManager.Log(DataManager.Logger.Console, "Привет");
+            // Параллельно считываем input файл.
+            List<Person> people = DataManager.ReadInputFileAsParallel();           
+            
+            // Запускаем потоки для обработки списка записей и записи в бд.
+            List<Task> tasks = new List<Task>();
+
+            // Разделяем "людей" по потокам.
+            int integerPart = people.Count / threadCount;
+            int remainderPart = people.Count % threadCount;
+
+            for (int i = 0; i < threadCount ; i++)
+            {
+                TaskArgs arg = new TaskArgs()
+                {
+                    From = integerPart * i,
+                    To = integerPart * i + integerPart - 1
+                };
+
+                // Все оставшиеся строки отдаем в последний поток.
+                if (i == threadCount - 1)
+                {
+                    arg.To = integerPart * i + integerPart - 1 + remainderPart;
+                }
+
+                var task = new TaskFactory().StartNew(new Action(() =>
+                {
+                    ReadJsonAndWriteDb(arg.From, arg.To);
+                }));
+            }
 
             // Выход из приложения по ESC оставим в главном потоке.
             ConsoleKeyInfo cki;
@@ -32,22 +60,16 @@ namespace ParallelLoading
             Environment.Exit(Environment.ExitCode);
         }
 
-        static int GetThreadCountFromConfig(string path)
+        static void ReadJsonAndWriteDb(int from, int to)
         {
-            int threadCount = 1;
-            try
-            {
-                using (StreamReader sr = new StreamReader(path))
-                {
-                    // Возвращает число потоков из первой строки файла конфигурации.
-                    threadCount = int.Parse(sr.ReadLine().Split(':')[1]);
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            return threadCount;
+            Console.WriteLine($"from {from} to {to}");
         }
+
+        public sealed class TaskArgs
+        {
+            public int From { get; set; }
+            public int To { get; set; }
+        }
+
     }
 }
