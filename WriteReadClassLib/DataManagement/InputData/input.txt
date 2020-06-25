@@ -1,0 +1,10 @@
+{ "id": "1", "fio": "fname1 lname1","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "2", "fio": "fname2 lname2","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "3", "fio": "fname3 lname3","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "4", "fio": "fname4 lname4","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "5", "fio": "fname5 lname5","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "6", "fio": "fname6 lname6","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "7", "fio": "fname7 lname7","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "8", "fio": "fname8 lname8","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "9", "fio": "fname9 lname9","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }
+{ "id": "10", "fio": "fname10 lname10","city": "kazan","phone": "88005553535", "upddate": "01-01-1999" }

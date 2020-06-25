@@ -1,6 +1,11 @@
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\DataManagement\OutputData\outputLog.txt
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\AppConfigure\customConfig.txt
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.exe.config
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.exe
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\ParallelLoading.pdb
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\WriteReadClassLib.dll
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\bin\Debug\WriteReadClassLib.pdb
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.csprojAssemblyReference.cache
+C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.csproj.CopyComplete
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.exe
 C:\Users\DNS\Documents\GitHub\Parallel-loading\ParallelLoading\obj\Debug\ParallelLoading.pdb

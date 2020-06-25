@@ -1,0 +1,6 @@
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.csprojAssemblyReference.cache
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\DataManagement\OutputData\outputLog.txt
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\WriteReadClassLib.dll
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\bin\Debug\WriteReadClassLib.pdb
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.dll
+C:\Users\DNS\Documents\GitHub\Parallel-loading\WriteReadClassLib\obj\Debug\WriteReadClassLib.pdb

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLoading", "ParallelLoading.csproj", "{BB6ED7DD-E143-4454-A3E5-E98B42DC4A71}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadWriteClassLibrary", "..\..\HousingCommunalServices\HousingCommunalServicesClassLibrary\ReadWriteClassLibrary.csproj", "{670E7C2C-5580-4F9B-B2A6-9ABA3675670F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteReadClassLib", "..\WriteReadClassLib\WriteReadClassLib.csproj", "{023A76A0-678C-4B74-8982-F5DC653FCFCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{BB6ED7DD-E143-4454-A3E5-E98B42DC4A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB6ED7DD-E143-4454-A3E5-E98B42DC4A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB6ED7DD-E143-4454-A3E5-E98B42DC4A71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{670E7C2C-5580-4F9B-B2A6-9ABA3675670F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{670E7C2C-5580-4F9B-B2A6-9ABA3675670F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{670E7C2C-5580-4F9B-B2A6-9ABA3675670F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{670E7C2C-5580-4F9B-B2A6-9ABA3675670F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023A76A0-678C-4B74-8982-F5DC653FCFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023A76A0-678C-4B74-8982-F5DC653FCFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023A76A0-678C-4B74-8982-F5DC653FCFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023A76A0-678C-4B74-8982-F5DC653FCFCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
