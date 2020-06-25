@@ -25,8 +25,10 @@ namespace ParallelLoading
             int integerPart = people.Count / threadCount;
             int remainderPart = people.Count % threadCount;
 
-
-            Console.WriteLine($"People count {people.Count}");
+            Console.WriteLine("Директория файла с логами: " + 
+                Environment.CurrentDirectory.ToString() + @"\DataManagement\OutputData");
+            Console.WriteLine($"Количество людей: {people.Count}");
+            Console.WriteLine($"Разделение людей по группам: ");
 
             for (int i = 0; i < threadCount ; i++)
             {
